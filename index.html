@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <h2>
+
+
+            <div id="body-box" class="rounded col-5 p-4 border border-2 border-warning mx-auto mt-5">
+
+                <h1 class="mb-4 text-warning text-center ">Grading System</h1>
+        
+                <input class="form-control  shadow-none mb-3 p-2" id="score" ></input>
+               
+                <button class="btn btn-warning m3 w-100 " onclick="checkScore()" >Check</button>
+        
+        
+                <div id="result">   </div>
+            </div>
+
+        </h2>
+      </div>
+         <div class="leaf">
+         <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+          <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+          <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+          <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+           <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+         <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+         <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+                
+         </div>
+         
+         <div class="leaf leaf1">
+         <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+          <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+          <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+          <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+           <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+         <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+         <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+                
+         </div>
+         
+         <div class="leaf leaf2">
+         <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+          <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+          <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+          <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+    
+           <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+         <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+         <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+                
+         </div>
+         </section>
+
+
+    <script>
+
+var sound = new Audio("audio/pipe.mp3") 
+function checkScore(){
+    
+    if(document.getElementById("score").value >= 70 && document.getElementById("score").value <=100){
+        
+        result.innerHTML.fontcolor("green") ="Excellent"
+        sound.play();
+
+    }
+    else if(score.value >=60 && score.value <=69){
+        alert("B")
+    }
+
+    else if (score.value >=50 && score.value <=59){
+        alert("C")
+    }
+
+    else if (score.value >=45 && score.value <=49){
+        alert("D")
+    }
+
+    else if (score.value >=40 && score.value <=44){
+        alert("E")
+    }
+
+    else if(score.value == ""){
+        alert("Inputfield cannot be empty")
+    }
+
+    else if(score.value >=0 && score.value <=39){
+        alert("You've failed ")
+    }
+
+    else{
+    alert("You've entered a wrong input, please check again!!!")
+        
+    }
+}
+    </script>
+</body>
+</html>
