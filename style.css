@@ -1,8 +1,12 @@
 #result{
-    margin: 10px 20px;
+    margin: 20px;
     text-align: center;
     margin: auto;
-    margin-top: 20px;
+    border: 2px dashed ;
+    border-radius:2rem ;
+    
+    padding: 5px;
+    font-size: 30px;
 
 }
 
@@ -28,10 +32,11 @@ body {
     .leaf div{
     position:absolute ;
     display:block ;
+    border: 2px solid red;
     }
     .leaf div:nth-child(1){
         left:20%; 
-        animation:fall 15s linear infinite ;
+        animation:fall 15s linear infinite forwards ;
         animation-delay:-2s;
     
     }
@@ -44,6 +49,7 @@ body {
         left:10%; 
         animation:fall 20s linear infinite ;
         animation-delay:-7s;
+        transform: rotate(270deg);
         
     }
     .leaf div:nth-child(4){
@@ -95,15 +101,17 @@ body {
             transform:translateX (-20px) rotate(225deg);
         }
         }
+        
     .leaf1{
-        transform: rotateX(180deg);
+        transform: rotate(120deg);
     }
+
     h2{
         position:absolute ;
         top:20%;
         width:100%;
         font-family: 'Courgette', cursive;
-        font-size:4em;
+        /* font-size:4em; */
         text-align:center;
         transform:translate ;
         color:#fff;
@@ -113,4 +121,5 @@ body {
     #body-box{
         position: relative;
         z-index: 100;
+        box-shadow: 1px 1px 0.5px rebeccapurple ;
     }
