@@ -52,6 +52,13 @@ function checkScore(){
 
     }
 
+    else if (score.value >100){
+        result.innerHTML ="Score should not be greater than 100"
+    }
+
+    else if (score.value <0){
+        result.innerHTML ="Score should not be less than 0"
+    }
     else{
     alert("You've entered a wrong input, please check again!!!")
         
