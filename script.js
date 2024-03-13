@@ -41,7 +41,7 @@ function checkScore(){
             }
 
     else if(score.value == ""){
-        alert("Inputfield cannot be empty")
+        result.innerHTML = "Inputfield cannot be empty"
     }
 
     else if(score.value >=0 && score.value <=39){
@@ -60,7 +60,9 @@ function checkScore(){
         result.innerHTML ="Score should not be less than 0"
     }
     else{
-    alert("You've entered a wrong input, please check again!!!")
+        
+        result.innerHTML ="You've entered a wrong input, please check again!!!"
+
         
     }
 }

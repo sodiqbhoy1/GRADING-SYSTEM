@@ -141,6 +141,8 @@ body {
     }
 
 
+
+
     @media  (max-width:470px) {
      
         *{
@@ -158,5 +160,6 @@ margin: 30px;
             font-size: 25px;
         
         }
+
         
     }
